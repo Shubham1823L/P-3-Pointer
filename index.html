@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            overflow-y: hidden;
+        }
+
+        .x,
+        .y {
+            background-color: red;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .x {
+            width: 100vw;
+            height: 2px;
+            translate: 0 50vh;
+img{
+    width: 100vw;
+    height: 100vh;
+    translate: 0 -50vh;
+}
+        }
+
+        .y {
+            width: 2px;
+            height: 100vh;
+            margin: auto;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="x">
+        <img src="yoyo.jpg" alt="yoyo">
+    </div>
+
 </body>
+
 </html>
